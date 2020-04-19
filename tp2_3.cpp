@@ -45,7 +45,7 @@ int main(){
         printf("Para fila '%d' hay %d pares\n", i+1, pares[i]);
     }
 
-    printf("Hola soy una linea de codigo");
+    printf("Hola soy una linea deg codigo");
     printf("%c");
 
     return 0;
