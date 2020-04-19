@@ -1,0 +1,3 @@
+f) No se lo puede ver porque esta en otra rama (Opcion_2) que fue subida al repositorio remoto.
+i) En master solo aparece el tp2_1_1.cpp y en Opcion_2 aparece tp2_1_2.cpp
+j) Ahora en tree aparecen todos los archivos que hay en la carpeta del tp.
