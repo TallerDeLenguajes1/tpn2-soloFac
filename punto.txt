@@ -1,8 +1,0 @@
-Sobre la línea principal:
-3) Escribe un programa en el que se cargue una matriz de 15 filas con números enteros
-aleatorios entre 100 y 999. Cada fila se cargará en forma dinámica. La cantidad de
-columnas estará dada por un número aleatorio entre [5, 15]. Mostrar por pantalla la matriz.
-a) Luego determinar para cada fila cuántos números son pares.
-b) Por último, generar un nuevo vector dinámico de 15 elementos con la cantidad de
-pares por fila obtenidos en el punto anterior.
-c) Subir los cambios al repositorio remoto.

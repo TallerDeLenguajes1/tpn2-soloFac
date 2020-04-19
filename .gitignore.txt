@@ -8,8 +8,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.tempCodeRunnerFile.cpp
-*.tempCodeRunnerFile.exe
+tempCodeRunnerFile*
 
 ### Executable ###
 *.app
