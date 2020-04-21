@@ -9,7 +9,7 @@ int main(){
 
     srand((unsigned) time(&t));
     
-    int columnas = 5 + rand() % 10;
+    int columnas = 5 + rand() % 11;
 
     int * matriz = (int *) malloc(sizeof(int) * filas * columnas);
 
