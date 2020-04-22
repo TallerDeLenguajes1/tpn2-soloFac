@@ -108,10 +108,11 @@ void PresentarPCmasVieja(PC n1[], int NdePCs){
     {
         if (anioPCmasvieja > n1[i].anio)
         {
+            anioPCmasvieja = n1[i].anio;
             indice = i;
         }
     }
-    printf("La PC mas vieja es la PC numero %d: \n", indice);
+    printf("\n\nLa PC mas vieja es la PC numero %d: \n", indice+1);
     printf("Velocidad: %d Ghz\n", n1[indice].velocidad);
     printf("Anio: %d\n", n1[indice].anio);
     printf("Nucleos: %d\n", n1[indice].cantidad);
@@ -127,10 +128,11 @@ void PresentarPcmayorVelocidad(PC n1[], int NdePCs){
     {
         if (PCmasRapida < n1[i].velocidad)
         {
+            PCmasRapida = n1[i].velocidad;
             indice = i;
         }
     }
-    printf("La PC mas rapida es la PC numero %d: \n", indice);
+    printf("\n\nLa PC mas rapida es la PC numero %d: \n", indice+1);
     printf("Velocidad: %d Ghz\n", n1[indice].velocidad);
     printf("Anio: %d\n", n1[indice].anio);
     printf("Nucleos: %d\n", n1[indice].cantidad);
