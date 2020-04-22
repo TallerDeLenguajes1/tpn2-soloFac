@@ -17,6 +17,10 @@ void CargarPc(PC ** p_pc, PC n1[], int NdePCs);
 
 void PresentarPCs(PC n1[], int NdePCs);
 
+void PresentarPCmasVieja(PC n1[], int NdePCs);
+
+void PresentarPcmayorVelocidad(PC n1[], int NdePCs);
+
 //Arreglo de cadenas
 
 char * tipo[] = {"Intel", "AMD", "Celeron", "Athlon", "Core", "Pentium"};
@@ -46,6 +50,10 @@ int main(){
     }
 
     PresentarPCs(n1, NdePCs);
+
+    PresentarPCmasVieja(n1, NdePCs);
+
+    PresentarPcmayorVelocidad(n1, NdePCs);
 
     getchar();
 
@@ -90,4 +98,41 @@ void PresentarPCs(PC n1[], int NdePCs){
         printf("Nucleos: %d\n", n1[i].cantidad);
         printf("CPU: %s\n", n1[i].tipo_cpu);
     }
+};
+
+void PresentarPCmasVieja(PC n1[], int NdePCs){
+    int anioPCmasvieja = 2017;
+    int indice;
+
+    for (int i = 0; i < NdePCs; i++)
+    {
+        if (anioPCmasvieja > n1[i].anio)
+        {
+            indice = i;
+        }
+    }
+    printf("La PC mas vieja es la PC numero %d: \n", indice);
+    printf("Velocidad: %d Ghz\n", n1[indice].velocidad);
+    printf("Anio: %d\n", n1[indice].anio);
+    printf("Nucleos: %d\n", n1[indice].cantidad);
+    printf("CPU: %s\n", n1[indice].tipo_cpu);
+    
+};
+
+void PresentarPcmayorVelocidad(PC n1[], int NdePCs){
+    int PCmasRapida = 1;
+    int indice;
+
+    for (int i = 0; i < NdePCs; i++)
+    {
+        if (PCmasRapida < n1[i].velocidad)
+        {
+            indice = i;
+        }
+    }
+    printf("La PC mas rapida es la PC numero %d: \n", indice);
+    printf("Velocidad: %d Ghz\n", n1[indice].velocidad);
+    printf("Anio: %d\n", n1[indice].anio);
+    printf("Nucleos: %d\n", n1[indice].cantidad);
+    printf("CPU: %s\n", n1[indice].tipo_cpu);
 };
